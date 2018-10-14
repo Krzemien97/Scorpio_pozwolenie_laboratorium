@@ -1,4 +1,4 @@
-# Scorpio_pozwolenie_laboratorium
+# Scorpio -- pozwolenie na dostęp do laboratorium
 ## Jak uzyskać plik pdf?
 *  ```bash
    git clone 
