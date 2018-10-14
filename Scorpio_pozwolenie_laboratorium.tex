@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{letter} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc)
+\usepackage[polish]{babel}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype} % Improves typography
+\usepackage{multicol}
+\usepackage[pdftex,
+            pdfauthor={Adrian Krzemiński},
+            pdftitle={Pozwolenie na dostęp do laboratorium},
+            pdfproducer={Latex},
+            pdfcreator={pdflatex}]{hyperref}
+\makeatletter
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+\textwidth 6.75in
+\textheight 9.25in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\topmargin -1in
+\longindentation 15mm %0.50\textwidth
+\parindent 0.4in
+
+\long\def\closing#1{
+\vspace{0.4in} % Some whitespace after the letter content and before the signature
+\noindent % Stop paragraph indentation
+\hspace*{\longindentation} % Move the signature right
+\parbox{\indentedwidth}{\raggedright
+#1 % Print the signature text
+\vskip 0.65in % Whitespace between the signature text and your name
+\fromsig}} % Print your name and title
+
+\signature{%
+  \begin{tabular}{c p{20mm}c}
+      \prezes & ~ & \opiekun\\
+       Prezes Koła Naukowego ,,OFF-ROAD''&~&Opiekun Koła Naukowego ,,OFF-ROAD''
+  \end{tabular}
+} 
+
+
+
+\date{Wrocław, \today}
+
+\def\opiekun{Prof.~dr~hab.~inż.~Piotr~Dudziński}
+\def\prezes{inż.~Anna Wójcik}
+
+\begin{document}
+\begin{letter}{}
+\opening{}
+
+\begin{center}
+  \huge
+  \textbf{Pozwolenie na dostęp do laboratorium}
+\end{center}
+
+ Jako opiekun koła Naukowego ,,OFF-ROAD'' działającego przy katedrze Inżynierii Maszyn Roboczych i Pojazdów Przemysłowych na Wydziale Mechanicznym Politechniki Wrocławskiej oświadczam, że niżej wymienieni członkowie Koła Naukowego Pojazdów Niekonwencjonalnych ,,OFF-ROAD'' są uprawnieni do pobierania klucza do Laboratorium L-4 należącego do Katedry Inżynierii Maszyn Roboczych i Pojazdów Przemysłowych w godzinach od 6:00 do 21:00.
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Anna Wójcik 222337
+        \item Adrian Krzemiński 237451
+        \item Natalia Ćwilichowska 211743
+        \item Dariusz Domański 218547
+        \item Filip Gawluk 214875
+        \item Kacper Fąfrowicz 229242
+        \item Mateusz Kryszczak 219664
+        \item Michał Bogucki 227588
+        \item Grzegorz Bielawski 229288
+        \item Krzysztof Basiak 229261
+        \item Mirosław Rajczyk 235303
+        \item Michał Wieczorek 226284
+        \item Artur Bauer 236852
+    \end{itemize}
+\end{multicols}
+\closing{Z poważaniem}
+
+\end{letter}
+\end{document}
